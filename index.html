@@ -35,8 +35,38 @@
 	<h1 class="text-center"> <img id="icon" src="img/icon.svg" width="64px" alt=""> Permutations and Combinations Calculator</h1>
 	<p class="text-center">by <a href="https://justingolden.me" target="_blank">Justin Golden</a></p>
 
-	<p class="text-center">&copy; <a href="http://rgbstudios.org" target="_blank">RGB Studios</a> <script>document.write(new Date().getFullYear() )</script> <img id="rgbIcon" src="img/rgb-icon.png" width="32px" alt=""> </p>
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#permutations">Permutations</a></li>
+		<li><a data-toggle="tab" href="#combinations">Combinations</a></li>
+		<li><a data-toggle="tab" href="#permutations-repetition">Permutations with Repetition</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="permutations" class="tab-pane fade in active">
+			<h3>Permutations</h3>
+			<p>Order matters</p>
 
+			<label>Number of things (n):</label>
+			<input id="perm-n" class="form-control" type="number">
+			<br>
+			<label>Taking (r):</label>
+			<input id="perm-r" class="form-control" type="number">
+			<br>
+			<button id="perm-calc" class="btn btn-primary">Calculate</button>
+			<button class="btn">Formula</button>
+			<br><br>
+			<p id="perm-output">2</p>
+		</div>
+		<div id="combinations" class="tab-pane fade">
+			<h3>Combinations</h3>
+			<p>Order does not matter</p>
+		</div>
+		<div id="permutations-repetition" class="tab-pane fade">
+			<h3>Permutations with Repetition</h3>
+			<p>Some content in menu 2.</p>
+		</div>
+	</div>
+
+	<p class="text-center">&copy; <a href="http://rgbstudios.org" target="_blank">RGB Studios</a> <script>document.write(new Date().getFullYear() )</script> <img id="rgbIcon" src="img/rgb-icon.png" width="32px" alt=""> </p>
 </div>
 </body>
 </html>
