@@ -74,6 +74,19 @@
 		<div id="permutations-repetition" class="tab-pane fade">
 			<h3>Permutations with Repetition</h3>
 			<p>Order does not matter, there are some repeated items</p>
+
+			<label for="perm-rept-n">Number of things (n):</label>
+			<input id="perm-rept-n" class="form-control" type="number">
+			<br>
+			<label for="perm-rept-list">Repeated items (separate by comma, number of times repeated for each item):</label>
+			<br>
+			<small>For example, if there is one item repeated 2 times and one item repeated 3 times, type "2,3"</small>
+			<input id="perm-rept-list" class="form-control" type="text">
+			<br>
+			<button id="perm-rept-calc" class="btn btn-primary">Calculate</button>
+			<button class="btn">Formula</button>
+			<br><br>
+			<p id="perm-rept-output"></p>
 		</div>
 	</div>
 

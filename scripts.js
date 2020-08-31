@@ -1,9 +1,9 @@
 function factiorial(n) {
-	let result = 1n; // big int
+	let ans = 1n; // big int
 	for(let i = 1n; i <= n; i++) {
-		result *= i;
+		ans *= i;
 	}
-	return result;
+	return ans;
 }
 
 function permutations(n, r) {
@@ -11,6 +11,13 @@ function permutations(n, r) {
 }
 function combinations(n, r) {
 	return (factiorial(n) / factiorial(n-r) / factiorial(r) );
+}
+function permutationsRepetition(n, list) {
+	let ans = factiorial(n);
+	for(let i=0; i<list.length; i++) {
+		ans /= factiorial(list[i]);
+	}
+	return ans;
 }
 
 $( ()=> {
@@ -25,5 +32,12 @@ $( ()=> {
 		let r = parseInt($('#comb-r').val() );
 		let ans = combinations(n, r);
 		$('#comb-output').html( ans.toLocaleString() ); // add commas
+	});
+	$('#perm-rept-calc').click( ()=> {
+		let n = parseInt($('#perm-rept-n').val() );
+		let list = ($('#perm-rept-list').val().trim().split(',') ).map( x => parseInt(x) );
+		let ans = permutationsRepetition(n, list);
+		console.log(ans);
+		$('#perm-rept-output').html( ans.toLocaleString() ); // add commas
 	});
 });
