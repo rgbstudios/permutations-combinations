@@ -45,24 +45,35 @@
 			<h3>Permutations</h3>
 			<p>Order matters</p>
 
-			<label>Number of things (n):</label>
+			<label for="perm-n">Number of things (n):</label>
 			<input id="perm-n" class="form-control" type="number">
 			<br>
-			<label>Taking (r):</label>
+			<label for="perm-r">Taking (r) at a time:</label>
 			<input id="perm-r" class="form-control" type="number">
 			<br>
 			<button id="perm-calc" class="btn btn-primary">Calculate</button>
 			<button class="btn">Formula</button>
 			<br><br>
-			<p id="perm-output">2</p>
+			<p id="perm-output"></p>
 		</div>
 		<div id="combinations" class="tab-pane fade">
 			<h3>Combinations</h3>
 			<p>Order does not matter</p>
+
+			<label for="comb-n">Number of things (n):</label>
+			<input id="comb-n" class="form-control" type="number">
+			<br>
+			<label for="comb-r">Taking (r) at a time:</label>
+			<input id="comb-r" class="form-control" type="number">
+			<br>
+			<button id="comb-calc" class="btn btn-primary">Calculate</button>
+			<button class="btn">Formula</button>
+			<br><br>
+			<p id="comb-output"></p>
 		</div>
 		<div id="permutations-repetition" class="tab-pane fade">
 			<h3>Permutations with Repetition</h3>
-			<p>Some content in menu 2.</p>
+			<p>Order does not matter, there are some repeated items</p>
 		</div>
 	</div>
 
